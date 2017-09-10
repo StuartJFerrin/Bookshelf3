@@ -1,0 +1,50 @@
+.book-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center
+}
+.lower-book-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center
+}
+
+.book-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center
+}
+
+.bookImage {
+  display: block;
+  width: 25%;
+  height: 25%;
+  margin: 50px;
+}
+
+.bookBackground {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-image: url("http://www.ayleet.com/i/2017/06/old-open-book-png-clipart-best-web-wallpapers-wide-full-hd.jpg");
+}
+
+.bookDescription {
+    margin-right: 15%;
+    margin-left: 50%;
+}
+
+.rating {
+    margin-left: 40%;
+}
+
+.essay {
+    margin-right: 15%;
+    margin-left: 50%;
+    width: 25%;
+}

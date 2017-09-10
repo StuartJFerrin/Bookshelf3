@@ -1,0 +1,31 @@
+<div class="bookBackground">
+    <div ng-controller="bookCtrl">
+        <div class="book-container">
+            <img class="bookImage" ng-src="{{book.thumbnail}}">
+            <div>
+                <h1>{{book.title}}</h1>
+                <h2>{{book.subtitle}}</h2>
+                <h2>{{book.authors}}</h2>
+                <div class="book-info">
+                    <form action="/action_page.php">
+                        <input type="checkbox" name="owned" value="Physical"> Owned - Physical<br>
+                        <input type="checkbox" name="owned" value="Digital"> Owned - Digital<br>
+                    </form>
+                    <form action="/action_page.php">
+                        <input type="checkbox" name="dateRead" value="hasRead"> Read<br>
+                        <input type="date" name="dateRead" Date Read<br>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="lower-book-containter">
+            <h3 class="rating">Rating: {{book.averageRating}}</h3>
+            <h3 class="bookDescription">Description</h3>
+            <div class="bookDescription">{{book.description}}</div>
+            </br>
+            </br>
+            <div class="essay">Notes</div>
+            <textarea class="essay"></textarea>
+        </div>
+    </div>
+</div>

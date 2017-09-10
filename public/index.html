@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="Bookshelf">
+
+<head>
+    <base href="/" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bookshelf</title>
+
+
+    <link rel="stylesheet" href="cssviews/main.css">
+    <link rel="stylesheet" href="cssviews/library.css">
+    <link rel="stylesheet" href="cssviews/login.css">
+    <link rel="stylesheet" href="cssviews/book.css">
+</head>
+
+<body ng-controller="authCtrl">
+
+    <ui-view></ui-view>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="app.js"></script>
+    <script src="/js/services/UserService.js"></script>
+    <script src="js/controllers/authCtrl.js"></script>
+    <script src="js/controllers/libraryCtrl.js"></script>
+    <script src="js/controllers/bookCtrl.js"></script>
+    <script src="js/services/libraryService.js"></script>
+    <script src="js/services/postBookService.js"></script>
+    <script src="js/services/getBooksService.js"></script>
+    <script src="js/services/getOneBookService.js"></script>
+</body>
+
+</html>

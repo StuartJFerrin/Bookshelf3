@@ -1,0 +1,33 @@
+<div ng-controller="libraryCtrl">
+   
+<form role="search">
+            <div>
+              <input type="text" ng-model="searchTerm" placeholder="Author/Title" >
+              <button ng-click="getBook(searchTerm)"> Submit </button>
+            </div>
+          </form>
+        <div>
+      <div> Your Search Results:</div>
+
+         <ul>
+        <li class="floating-box container" ng-repeat="googleBook in googleBooks" ng-click="postBook(googleBook)">
+
+            <img class="thumb-pic libraryImage" style="width:100%" ng-src="{{googleBook.smallThumbnail}}">
+            <div class="middle">
+                <div class="text">{{googleBook.title}}<br/>{{googleBook.authors}}</div>
+            </div>
+        </li>
+    </ul>
+    </div>
+
+   My Books
+    <ul>
+        <li class="floating-box container" ng-repeat="book in myBooks" ui-sref="book({id: book.id})">
+
+            <img class="thumb-pic libraryImage" style="width:100%" ng-src="{{book.smallThumbnail}}">
+            <div class="middle">
+                <div class="text">{{book.title}}<br/>{{book.authors}}</div>
+            </div>
+        </li>
+    </ul>
+</div>

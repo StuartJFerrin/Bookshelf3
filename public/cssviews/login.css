@@ -1,0 +1,92 @@
+
+@import url('http://fonts.googleapis.com/css?family=Berkshire+Swash');
+
+appTitle{
+   font-family: 'Berkshire Swash';
+   font-size: 48px;
+}
+
+.loginBackground {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    position: relative;
+    background: url("http://adriennelacava.com/wp-content/uploads/2013/10/Depositphotos_3699706_m.jpg");
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginBackground::before {
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: darkgray;
+    opacity: .7;
+}
+
+.login {
+    width: 350px;
+    height: 450px;
+    background-color: gray;
+    border-radius: 25px 0px 0px 25px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.spine {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 25px;
+    background-color: black;
+    
+}
+
+.pages {
+    background-color: white;
+    position: absolute;
+    bottom: 6px;
+    height: 38px;
+    width: 98%;
+    right: 0;
+    border-radius: 25px 0px 0px 25px;
+
+}
+
+.bottompage {
+    background-color: #555;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    border-radius: 25px 0px 0px 25px;
+
+}
+
+input {
+    size: 25px;
+    border-radius: 25px;
+}
+
+.button {
+    width: 100px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
